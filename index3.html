@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Alex Pecoraro">
+    <title>Gallery</title>
+    <link href="../css/IT411b.css" rel="stylesheet">
+    <style>
+        #largeimage img {
+            position: absolute;
+        }
+        
+        #largeimage img:hover {
+            height: 450px;
+            width: 550px;
+            transition: all 1s ease;
+        }
+        
+        .tilt {
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        
+        .tilt:hover {
+            -webkit-transform: rotate(-10deg);
+            -moz-transform: rotate(-10deg);
+            -o-transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+        }
+
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../index3.js"></script>
+</head>
+
+<body>
+    <img src="../images/sftwear.png">
+    <h1>IT 411</h1>
+    <h2>Displaying a gallery of images</h2>
+    <hr />
+    <div id="content">
+    </div>
+    <div id="gallery">
+        <h3>Gallery of images</h3>
+        <img class="image" src="../images/goblinmonkey.jpg" height="100px" width="125px">
+        <img class="image" src="../images/mustachemonkey.jpg" height="100px" width="125px">
+        <img class="image" src="../images/nosemonkey.jpg" height="100px" width="125px">
+        <img class="image" src="../images/teethmonkey.png" height="100px" width="125px">
+        <img class="image" src="../images/monkeypop.jpg" height="100px" width="125px">
+    </div>
+    <div>
+        <h3>The larger image</h3>
+    </div>
+    <div id="largeimage" class="tilt"></div>
+</body>
+
+</html>
